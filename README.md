@@ -2,11 +2,11 @@
 
 Using the script [general_json2yolo.py](https://github.com/ryouchinsa/Rectlabel-support/blob/master/general_json2yolo.py), you can convert the RLE mask with holes to the YOLO segmentation format.
 
-The RLE mask is converted to a parent polygon and a child polygon using `cv2.findContours()`.
-The parent polygon points are sorted in clockwise order. 
-The child polygon points are sorted in counterclockwise order.
-Detect the nearest point in the parent polygon and in the child polygon.
-Connect those 2 points with narrow 2 lines.
+The RLE mask is converted to a parent polygon and a child polygon using `cv2.findContours()`.<br>
+The parent polygon points are sorted in clockwise order. <br>
+The child polygon points are sorted in counterclockwise order.<br>
+Detect the nearest point in the parent polygon and in the child polygon.<br>
+Connect those 2 points with narrow 2 lines.<br>
 So that the polygon with a hole is saved in the YOLO segmentation format.
 
 ```
@@ -114,8 +114,8 @@ The converted YOLO segmentation format.
 
 ![スクリーンショット 2023-11-22 2 11 14](https://github.com/ryouchinsa/Rectlabel-support/assets/1954306/cc34027a-075f-4b67-8de7-bd2dddddac59)
 
-To run the script, put the COCO JSON file coco_train.json into `datasets/coco/annotations`.
-Run the script. `python general_json2yolo.py  `
+To run the script, put the COCO JSON file coco_train.json into `datasets/coco/annotations`.<br>
+Run the script. `python general_json2yolo.py`<br>
 The converted YOLO txt files are saved in `new_dir/labels/coco_train`.
 
 ![スクリーンショット 2023-11-23 16 39 21](https://github.com/ultralytics/JSON2YOLO/assets/1954306/c3d98120-66f5-4cb8-b74d-a500f0bd811d)
@@ -151,5 +151,5 @@ use_segments=False,
 use_keypoints=True,
 ```
 
-This script originates from Ultralytics [JSON2YOLO](https://github.com/ultralytics/JSON2YOLO) repository.
+This script originates from Ultralytics [JSON2YOLO](https://github.com/ultralytics/JSON2YOLO) repository.<br>
 We hope this script would help your business.
