@@ -1,4 +1,4 @@
-# donut
+# Donuts
 
 Using the script [general_json2yolo.py](https://github.com/ryouchinsa/Rectlabel-support/blob/master/general_json2yolo.py), you can convert the RLE mask with holes to the YOLO segmentation format.
 
